@@ -27,7 +27,7 @@ const routes: Routes = [
   {
     path: 'contacts',
     component: LayoutComponent,
-    canActivate: [AuthGuard],
+    canActivate: [AuthGuard], // 在导航contacts之前会进入路由守卫
     children: [
       {
         path: '',

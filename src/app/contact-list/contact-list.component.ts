@@ -13,10 +13,10 @@ export class ContactListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // const token = window.localStorage.getItem('auto_token');
-    // if (!token) {
-    //   this.router.navigate(['/signin']);
-    // }
+    const token = window.localStorage.getItem('auto_token');
+    if (!token) {
+      this.router.navigate(['/signin']);
+    }
   }
 
 }
